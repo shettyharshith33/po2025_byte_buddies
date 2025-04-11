@@ -40,6 +40,7 @@ import com.airbnb.lottie.compose.LottieConstants
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.shettyharshith33.vcputtur.R
 import com.shettyharshith33.vcputtur.ui.theme.myGrey
+import com.shettyharshith33.vcputtur.ui.theme.poppinsFontFamily
 import com.shettyharshith33.vcputtur.ui.theme.textColor
 import com.shettyharshith33.vcputtur.ui.theme.themeBlue
 
@@ -71,23 +72,24 @@ fun OnBoardingScreen(
 
         // College Name
         Text(
-            "Vivekananda College of",
+            "AI Evaluator",
+            fontFamily = poppinsFontFamily,
             fontSize = (screenWidth.value * 0.05f).sp,
-            color = textColor,
+            color = Color.Black,
             fontWeight = FontWeight.Bold
         )
-        Text(
-            "Arts, Science and Commerce",
-            fontSize = (screenWidth.value * 0.05f).sp,
-            color = textColor,
-            fontWeight = FontWeight.Bold
-        )
-        Text(
-            "(Autonomous)",
-            fontSize = (screenWidth.value * 0.04f).sp,
-            color = textColor,
-            fontWeight = FontWeight.Bold
-        )
+//        Text(
+//            "Arts, Science and Commerce",
+//            fontSize = (screenWidth.value * 0.05f).sp,
+//            color = textColor,
+//            fontWeight = FontWeight.Bold
+//        )
+//        Text(
+//            "(Autonomous)",
+//            fontSize = (screenWidth.value * 0.04f).sp,
+//            color = textColor,
+//            fontWeight = FontWeight.Bold
+//        )
 
         Spacer(modifier = Modifier.height(screenHeight * 0.02f))
 
@@ -104,7 +106,7 @@ fun OnBoardingScreen(
             modifier = Modifier.size(screenWidth * 0.8f),
             iterations = LottieConstants.IterateForever
         )
-        Text("Login with your e-mail and password", fontSize = (screenWidth.value * 0.04f).sp)
+        Text("Login with your e-mail and password", color = Color.Black, fontSize = (screenWidth.value * 0.04f).sp)
 
         Spacer(modifier = Modifier.height(screenHeight * 0.03f))
 
@@ -118,15 +120,13 @@ fun OnBoardingScreen(
                 .height(screenHeight * 0.06f)
                 .defaultMinSize(minWidth = 200.dp, minHeight = 48.dp)
                 .widthIn(max = 400.dp), // Ensures button doesn't get too large
-            colors = ButtonDefaults.buttonColors(containerColor = themeBlue)
+            colors = ButtonDefaults.buttonColors(containerColor = Color.Black)
         ) {
             Text("Login", color = Color.White, fontSize = (screenWidth.value * 0.045f).sp)
         }
 
         Spacer(modifier = Modifier.height(screenHeight * 0.03f))
 
-
-        Spacer(modifier = Modifier.height(screenHeight * 0.02f))
 
         // Sign-up Button
         Button(
@@ -143,6 +143,8 @@ fun OnBoardingScreen(
             Text(
                 "Don't have an account? Sign-up here",
                 color = Color.Black,
+                fontFamily = poppinsFontFamily,
+                fontWeight = FontWeight.Normal,
                 fontSize = (screenWidth.value * 0.035f).sp, // Smaller to prevent line breaks
                 maxLines = 1
             )
