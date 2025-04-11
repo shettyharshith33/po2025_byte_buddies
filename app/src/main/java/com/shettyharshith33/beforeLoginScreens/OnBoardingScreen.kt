@@ -60,6 +60,9 @@ fun OnBoardingScreen(
     val context = LocalContext.current
     val haptic = LocalHapticFeedback.current
 
+
+    Spacer(modifier = Modifier.height(20.dp))
+
     Column(
         modifier = Modifier
             .fillMaxSize()

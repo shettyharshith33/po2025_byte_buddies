@@ -29,7 +29,6 @@ fun BeforeLoginScreensNavigation(navController: NavController) {
         navController = navController,
         startDestination = BeforeLoginScreensNavigationObject.AUTH_CHECK
     ) {
-
         composable(BeforeLoginScreensNavigationObject.AUTH_CHECK) {
             AuthCheckScreen(navController)
         }
