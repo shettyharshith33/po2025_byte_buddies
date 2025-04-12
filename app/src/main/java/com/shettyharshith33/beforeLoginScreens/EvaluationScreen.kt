@@ -181,7 +181,7 @@ fun EvaluationScreen(navController: NavController) {
     }
 
     // Website URL (replace with your actual website URL)
-    val websiteUrl = "http://172.16.160.111:5000/"
+    val websiteUrl = "http://127.0.0.1:5000/"
 
     Column(
         modifier = Modifier

@@ -108,10 +108,10 @@ fun LoginScreen(
 //            color = textColor,
 //            fontWeight = FontWeight.Bold
 //        )
-        Spacer(modifier = Modifier.height(10.dp))
+        Spacer(modifier = Modifier.height(20.dp))
         Image(
             modifier = Modifier.size(80.dp),
-            painter = painterResource(R.drawable.bb_logo),
+            painter = painterResource(R.drawable.new_logo_bb),
             contentDescription = ""
         )
         Spacer(modifier = Modifier.height(5.dp))
